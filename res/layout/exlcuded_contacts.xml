@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal" 
+	android:layout_width="fill_parent"
+	android:layout_height="42px" 
+	android:gravity="center_vertical"
+	android:paddingBottom="10px"
+	>
+		<ImageView android:id="@+id/list_item_image"
+			android:adjustViewBounds="true" 
+			android:layout_gravity="center_vertical"
+			android:layout_height="89px" 
+			android:layout_width="89px"
+			android:paddingTop="10px"/>
+			
+		<LinearLayout android:id="@+id/LinearLayout01"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:paddingLeft="10px"
+			>
+			
+			<TextView 
+				android:lines="1" 
+				android:layout_width="fill_parent"
+				android:gravity="center_vertical" 
+				android:layout_marginLeft="2px"
+				android:id="@+id/list_item_name" 
+				android:layout_height="wrap_content"
+				android:textStyle="bold"/>
+
+			<TextView 
+				android:layout_height="wrap_content" 
+				android:id="@+id/list_item_id"
+				android:gravity="center_vertical" 
+				android:layout_width="fill_parent"
+				android:layout_marginLeft="2px" 
+				android:lines="1"/>
+				
+			<!--  
+			<TextView 
+				android:layout_height="wrap_content" 
+				android:id="@+id/list_item_info"
+				android:gravity="center_vertical" 
+				android:layout_width="fill_parent"
+				android:layout_marginLeft="2px" 
+				android:lines="1"
+				android:textStyle="italic"/>
+			-->
+		</LinearLayout>
+
+</LinearLayout>

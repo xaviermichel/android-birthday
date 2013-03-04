@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+		
+		<item 
+				android:id="@+id/editpref" 
+				android:title="Préférences" 
+				android:icon="@drawable/settings"
+		/>
+		
+		<item 
+				android:id="@+id/editexludedcontacts" 
+				android:title="Liste des contacts exclus"
+				android:icon="@drawable/blocked_user"
+		/>
+		
+		<item 
+				android:id="@+id/refresh_list" 
+				android:title="Rafraîchir"
+				android:icon="@drawable/refresh"
+		/>
+		
+		<item 
+				android:id="@+id/about" 
+				android:title="A propos"
+				android:icon="@drawable/about"
+		/>
+		
+		<item 
+				android:id="@+id/quit" 
+				android:title="Quitter"
+				android:icon="@drawable/close"
+		/>
+
+</menu>

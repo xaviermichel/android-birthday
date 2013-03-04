@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  
+	<PreferenceCategory android:title="Options">
+    	<com.xmichel.android.preferences.TimePickerPreference
+            android:summary="Heure à laquelle le logiciel affichera la notification s'il y a des anniversaires chaque jour" android:key="refresh_hour" android:title="Heure de rafraîchissement"/>
+            
+	</PreferenceCategory>
+  
+</PreferenceScreen>
