@@ -7,6 +7,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
  
+@Deprecated
 public class OnBootReceiver extends BroadcastReceiver {
  
     @Override
