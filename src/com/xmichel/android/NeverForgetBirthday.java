@@ -39,10 +39,6 @@ public class NeverForgetBirthday extends ListActivity {
 	@Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-   
-        if ( BirthdayService.getInstance() == null ) {
-        	OnBootReceiver.startBirthdayService(getBaseContext());
-        }
         
         updateContactList();
         
@@ -91,7 +87,7 @@ public class NeverForgetBirthday extends ListActivity {
 	 * Met à jour la liste des contacts
 	 */
 	public void updateContactList() {
-        setListAdapter(new MyAdapter(this, BirthdayService.getContacts(this)));		
+        setListAdapter(new MyAdapter(this, OnAlarmReceiver.getContacts(this)));		
 	}
 
     

@@ -17,7 +17,6 @@ public class Preferences extends PreferenceActivity {
     protected void onDestroy()
     {
     	super.onDestroy();
-    	//PullService.sendIdentification();
     }
     
 }

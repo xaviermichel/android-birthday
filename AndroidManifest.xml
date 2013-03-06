@@ -5,13 +5,6 @@
       android:versionName="2.0">
     <application android:label="@string/app_name" android:icon="@drawable/icone">
     
-    	<receiver android:name=".OnBootReceiver" android:enabled="true" 
-               android:exported="false" android:label="OnBootReceiver"> 
-               <intent-filter> 
-                    <action android:name="android.intent.action.BOOT_COMPLETED" /> 
-               </intent-filter> 
-        </receiver> 
-    
     	<receiver android:name=".OnAlarmReceiver"></receiver>
     
         <activity android:name=".NeverForgetBirthday"
@@ -29,15 +22,11 @@
 
 		<activity android:name=".preferences.Preferences"></activity>
 
-		<service android:name="BirthdayService" android:enabled="true" 
-                 android:exported="false" android:label="BirthdayService" /> 
-
     </application>
 
 
 	<uses-sdk android:minSdkVersion="7" />
 	
-	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> 
 	<uses-permission android:name="android.permission.READ_CONTACTS"></uses-permission>
 	<uses-permission android:name="android.permission.VIBRATE"></uses-permission>
 
