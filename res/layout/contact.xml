@@ -10,8 +10,8 @@
 		<ImageView android:id="@+id/list_item_image"
 			android:adjustViewBounds="true" 
 			android:layout_gravity="center_vertical"
-			android:layout_height="160px" 
-			android:layout_width="160px"
+			android:layout_height="200px" 
+			android:layout_width="200px"
 			android:paddingTop="10px"/>
 			
 		<LinearLayout android:id="@+id/LinearLayout01"
