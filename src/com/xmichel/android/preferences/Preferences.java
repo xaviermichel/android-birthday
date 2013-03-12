@@ -20,12 +20,13 @@ public class Preferences extends PreferenceActivity implements SharedPreferences
             super.onCreate(savedInstanceState);
             addPreferencesFromResource(R.xml.preferences);
             
-            PreferenceManager.getDefaultSharedPreferences(this).registerOnSharedPreferenceChangeListener(this);
+            //PreferenceManager.getDefaultSharedPreferences(this).registerOnSharedPreferenceChangeListener(this);
     }
     
     @Override
     protected void onDestroy()
     {
+    	this.onSharedPreferenceChanged(null, null);
     	super.onDestroy();
     }
     
