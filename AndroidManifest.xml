@@ -1,31 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
       package="com.xmichel.android"
-      android:versionCode="2"
-      android:versionName="2.0">
-    <application android:label="@string/app_name" android:icon="@drawable/icone">
+      android:versionCode="3"
+      android:versionName="3.0">
+      
+    <application android:label="@string/app_name" android:icon="@drawable/icone" android:allowBackup="true">
     
     	<receiver android:name=".OnAlarmReceiver"></receiver>
     
         <activity android:name=".NeverForgetBirthday"
-                  android:label="@string/app_name">
+                  android:label="@string/app_name"
+                  android:theme="@android:style/Theme.Holo.Light"
+                  >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         
-        <activity android:label="@string/app_name" android:name=".contactsManagement.ContactList"/>
+        <activity android:label="@string/app_name" 
+            	  android:name=".contactsManagement.ContactList"
+            	  android:theme="@android:style/Theme.Holo.Light"/>
 
-        <activity android:name=".ActivityNotification" 
-				  android:label="@string/app_name"/>
-
-		<activity android:name=".preferences.Preferences"></activity>
+		<activity android:name=".preferences.Preferences"
+		    	  android:theme="@android:style/Theme.Holo.Light"
+		    />
 
     </application>
 
 
-	<uses-sdk android:minSdkVersion="7" />
+	<uses-sdk android:minSdkVersion="11" />
 	
 	<uses-permission android:name="android.permission.READ_CONTACTS"></uses-permission>
 	<uses-permission android:name="android.permission.VIBRATE"></uses-permission>
