@@ -3,7 +3,7 @@ android-birthday
 
 Mes anniversaires sous android, une application toute simple.
 
-Elle se base sur les données de vos contacts gmail et permet de gérer :
+Elle se base sur les données de vos contacts gmail (et non google+) et permet de gérer :
 * Une liste d'exclustion de contact 
 * L'heure à laquelle elle affiche sa notification
 
