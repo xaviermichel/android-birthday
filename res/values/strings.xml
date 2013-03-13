@@ -19,7 +19,7 @@
 			Logiciel d\'annonce des anniversaires  en utilisant les contacts sur le compte 
 			google. Pas de connection internet, pas de processus qui tourne en arrière plan,
 			pas de pub : une utilisation optimale de la batterie pour un logiciel qui vous 
-			préviens des anniversaire du jour !
+			prévient des anniversaires du jour !
 		</div>
 		
 		<hr/>
@@ -29,7 +29,7 @@
 			<li>version 3.0</li>
 			<ul>
 				<li>Mise à jour du code pour optimisation mémoire (AlarmManager)</li>
-				<li>Remise du design au goût du jour</li>
+				<li>Mise au goût du jour de l\'interface</li>
 			</ul>
 			<li>version 2.0</li>
 			<ul>
