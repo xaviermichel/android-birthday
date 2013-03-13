@@ -10,4 +10,4 @@ Elle se base sur les données de vos contacts gmail et permet de gérer :
 Elle est éteinte le reste du temps et n'utilise ni mémoire, ni CPU (AlarmManager). Elle n'a pas accès à l'internet (vos données personnelles restent chez vous [et chez google]). 
 
 
-Nécessite au moins android 4. Pour une version antérieur, il suffit de modifier le manifest pour qu'il accepte les version précedentes et de remplacer les `android:theme="..."` toujours dans le manifest par un quelque chose disponible sur une précédente version d'android.
+Nécessite au moins android 4. Pour une version antérieur, il suffit de modifier le manifest pour qu'il accepte les version précedentes et de remplacer les `android:theme="..."` toujours dans le manifest par un quelque chose disponible sur une précédente version d'android (autrement dit, la nécessité d'Android 4 est juste pour le thème, ce programme a été testé et fonctionne sous android 2.1).
