@@ -4,41 +4,46 @@
     <string name="hello">Hello World, NeverForgetBirthday!</string>
     <string name="app_name">Never Forget Birthday</string>
 
-	<string name="str_about">
-	
-			Never Forget Birthday	\n
-			---
-			
-			\n\n
-			
-			Auteur : Xavier MICHEL (xavier.michel.mx440@gmail.com) \n
-			Version : 2.0						\n
-			Date : 28/05/2011
-			
-			\n\n
-			---
-			\n\n
-			
-			Logiciel d\'annonce des anniversaires 
-			en utilisant les contacts sur le compte 
-			google.
-			
-			\n\n
-			---
-			\n\n
-			
-			Mises à jour : \n
-				version 2.0 : \n
-					- Refonte partielle de l\'interface					\n
-					- Ajout de notification pour les anniversaires du jour \n
-					- Ajout d\'une liste d\'exlusion de contacts		\n
-					- Possibilité de choisir l\'heure de notification	\n
-				\n	
-				version 1.0 : \n
-					- Version de base, non distribuable					\n
-					- Affichage des anniversaires du jour lors du lancement de l\'application		\n
-			
-			
+	<string name="str_about"><![CDATA[
+		Auteur : <a href="http://www.xaviermichel.info">Xavier MICHEL</a>	<br/>
+		Version : 3.0														<br/>
+		Date : 13/03/2013
+		
+		<hr/>
+		
+		<b>This app source code <a href="https://github.com/xaviermichel/android-birthday">is available on github</a> !</b>
+		
+		<hr/>
+		
+		<div style="text-align: justify;">
+			Logiciel d\'annonce des anniversaires  en utilisant les contacts sur le compte 
+			google. Pas de connection internet, pas de processus qui tourne en arrière plan,
+			pas de pub : une utilisation optimale de la batterie pour un logiciel qui vous 
+			préviens des anniversaire du jour !
+		</div>
+		
+		<hr/>
+		
+		<i>Mises à jour :</i> 
+		<ul>
+			<li>version 3.0</li>
+			<ul>
+				<li>Mise à jour du code pour optimisation mémoire (AlarmManager)</li>
+				<li>Remise du design au goût du jour</li>
+			</ul>
+			<li>version 2.0</li>
+			<ul>
+				<li>Refonte partielle de l\'interface</li>
+				<li>Ajout de notification pour les anniversaires du jour</li>
+				<li>Ajout d\'une liste d\'exlusion de contacts</li>
+				<li>Possibilité de choisir l\'heure de notification</li>
+			</ul>
+			<li>version 1.0</li>
+			<ul>
+				<li>Version de base, non distribuable</li>
+				<li>Affichage des anniversaires du jour lors du lancement de l\'application</li>
+			</ul>
+		</ul>]]>
 	</string>
 
 </resources>

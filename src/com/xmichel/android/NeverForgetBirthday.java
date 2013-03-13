@@ -7,6 +7,10 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Vibrator;
+import android.text.Html;
+import android.text.SpannableString;
+import android.text.method.LinkMovementMethod;
+import android.text.util.Linkify;
 import android.view.ContextMenu;
 import android.view.ContextMenu.ContextMenuInfo;
 import android.view.Menu;
@@ -14,7 +18,9 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnCreateContextMenuListener;
+import android.webkit.WebView;
 import android.widget.AdapterView;
+import android.widget.TextView;
 
 import com.xmichel.android.contactsManagement.Contact;
 import com.xmichel.android.contactsManagement.ContactList;
@@ -108,6 +114,7 @@ public class NeverForgetBirthday extends ListActivity {
     /**
      * Sélection d'un item du menu
      */
+	@Override
     public boolean onOptionsItemSelected(MenuItem item) {
     	
     	switch (item.getItemId()) {  
@@ -132,26 +139,34 @@ public class NeverForgetBirthday extends ListActivity {
 			return true;
 			
 		case R.id.about :
+
+			String html = getString(R.string.str_about);
+			String mime = "text/html";
+			String encoding = "utf-8";
+			
+			final WebView message = new WebView(this);
+			//message.set(Html.fromHtml(getString(R.string.str_about)));
+			message.loadDataWithBaseURL(null, html, mime, encoding, null);
 			
 			AlertDialog.Builder builder = new AlertDialog.Builder(this);
-			builder.setMessage(getString(R.string.str_about))
-			       .setCancelable(true)
-			       .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-			           public void onClick(DialogInterface dialog, int id) {
-			                dialog.cancel();
-			           }
-			       });
-			AlertDialog alert = builder.create();
-			alert.show();
+			builder.setTitle(R.string.app_name)
+				.setCancelable(true)
+				.setIcon(R.drawable.icone)
+				.setPositiveButton("Ok", null)
+				.setView(message)
+				.create();
+	    	
+	    	AlertDialog alert = builder.create();
+    		alert.show();
 			
 			return true;
 			
 		default : 
 			break;
-	}  
+    	}
+
     	return false;
     }
- 
     
     /**
      * Pour savoir quand l'édition de contacts exclus est terminée et reconstruire la liste
